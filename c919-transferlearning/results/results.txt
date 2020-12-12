@@ -1,0 +1,34 @@
+lstm(50)+fc(3,sigmoid):lr=0.01, GradientDescentOptimizer,20170928_51-53/3000+7000rows
+trainset: rmse=0.0829
+testset: rmse=0.0845
+
+rnn(50)+fc(3,sigmoid):lr=0.01, GradientDescentOptimizer,20170928_51-53/3000+7000rows
+trainset: rmse=0.0381
+testset: rmse=0.0399
+
+multirnn(50)+fc(3,sigmoid):lr=0.01,GradientDescentOptimizer,20170928_51-53/3000+7000
+trainset:rmse=0.0381
+testset:rmse=0.0393
+
+1.rnn(50)+fc(3,sigmoid):lr=0.01,GradientDescentOptimizer
+20171017_51-53/3000+7000rows
+trainset:rmse=0.0730
+testset:rmse=0.1206
+400epoch's time = 7'06''
+
+2.rnn(50)+fc(3,sigmoid):lr=0.01,GradientDescentOptimizer,20170928_51-53/3000+7000rows
+transfer(fine tuning): rnn(50)+fc(3,sigmoid)+fc(3,sigmoid),lr=0.01,GradientDescentOptimizer,20171017_51-53/3000+7000rows
+trainset:rmse=0.1251
+testset:rmse=0.1471
+400epoch's time = 3'44''
+
+3.rnn(50)+fc(3,sigmoid):lr=0.01,GradientDescentOptimizer,20170928_51-53/3000+7000rows
+transfer(all retraining): rnn(50)+fc(3,sigmoid),lr=0.01,GradientDescentOptimizer,20171017_51-53/3000+7000rows
+trainset:rmse=0.0731
+testset:rmse=0.1199
+400epoch's time = 6'18''
+
+4.multirnn(50)+fc(3,sigmoid):lr=0.01,GradientDescentOptimizer,20171017_51-53/3000+7000rows
+trainset:rmse=0.0593
+testset:rmse=0.1240
+401epoch's time = 8'13''

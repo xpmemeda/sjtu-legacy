@@ -1,0 +1,42 @@
+We can use string to present "color", "marker" and line shape:
+For example:
+	'ck--', 'mo:', 'kp-'
+
+There are 8 colors:
+	b: blue
+	g: green
+	r: red
+	c: cyan
+	m: magenta
+	y: yellow
+	k: black
+	w: write
+There are 23 kind of spot shapes:
+	".": point
+	",": pixel
+	"o": circle
+	"v": triangle_down
+	"^": triangle_up
+	"<": triangle_left
+	">": triangle_right
+	"1": tri_down
+	"2": tri_up
+	"3": tri_left
+	"4": tri_right
+	"8": octagon
+	"s": square
+	"p": pentagon
+	"*": star
+	"h": hexagon1
+	"H": hexagon2
+	"+": plus
+	"x": x
+	"D": diamond
+	"d": thin_diamond
+	"|": vline
+	"_": hline
+There are 4 kind of linear:
+	"-": 实线
+	"--": 虚线
+	"-.":点划线
+	":":点线
